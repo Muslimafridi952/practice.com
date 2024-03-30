@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <img src="./images.html/muslim.png.JPG" alt="" width="300" height="430">
-    <h1>Muslim Afridi</h1>
-
-    <p>
+    <header>
+       
+    </header>
+    
+    
+    <div id="div1">
+        <img id="pic" src="./images.html/muslim.png.JPG" alt="" width="340" height="480">
+        <h1 style="color: rgb(66, 25, 10); margin-left: 20px; font-size: 55px;">Muslim Afridi <img id="speaker" src="./images.html/icons8-speaker-50.png" alt="speaker icon" width="70" height="60">
+        </h1>
+        
+    </div>
+        
+    <script>
+        var audio = new Audio ("./audios.html/New recording 5.m4a")
+        function playAudio(){
+            audio.play();
+        }
+        document.getElementById("speaker").addEventListener("click", playAudio);
+    </script> 
+    <p id="p1">
         I am a front end web developer.<br>
-    i am working at Saylani mass IT training centre peshawar.<br>
+    I am working at Saylani mass IT training centre peshawar.<br>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, accusantium.</p>
- <h3><a href="https://www.facebook.com/muslimafridi.afridi?mibextid=ZbWKwL">more...</a></h3>    
-<ol>
+ <h3><a href="https://www.facebook.com/muslimafridi.afridi?mibextid=ZbWKwL">More...</a></h3>    
+ <ol id="list1">
     <li><b><a href="projects.html">My projects</a></b></li>
     <li><b><a href="contact.html">My Contacts</a></b></li>
     <li><b><a href="skills.html">My skills</a></b></li><br><br>
-</ol>    
-    
-    <h1>Interested in....</h1>
-    <h3>Listening sounds of different birds...</h3><br>
-    <audio controls src="./audios.html/birds_sound.mp3"><br>
-</audio>
-
-
-<h1>Education Carrier</h1>
+</ol 
+     
+   <h1>EDUCATION CARRIER</h1>
 
 <style>
 table,tr,th,td{
@@ -74,7 +85,8 @@ tr,td{
 </tr>
 
 
-</table><br>
+</table>
+<hr>
 <h1>I LIKE RAIN OVER GREENERY LIKE THIS...</h1>
         <video width="600px" height="400px" controls loop src="./videos.html/pexels-maksim-romashkin-12717007 (Original).mp4">
 </video>

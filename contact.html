@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
-
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h1>Visit us:</h1>
-</ul>
-<ul><li><a href="projects.html"><b>MY projects</b>
+
+<ul id="list1">
+    <li><a href="projects.html"><b>MY projects</b>
 </a></li>
 <li><a href="skills.html"> <b>My skills</b></a></li>
 <li><a href="index.html"> <b>My Home page <b></a></li>
@@ -42,15 +43,17 @@
  <fieldset>
     <style>
 #submit{
-    background-color: chocolate;
-    width: 100px;; height: 50px;
+    background-color: rgb(102, 52, 18);
+    width: 140px;; height: 70px;
     font-weight: 200;
-    border: px;
+    border:4px;
+    border-radius: 7px;
+    font-size: 30px;
 }
 
 
     </style>
-    <legend><h2>Submit your feedback:</h2></legend><h2>
+    <legend><h2 style="font-size: 30px;">Submit your feedback:</h2></legend><h2>
 <form id="feedbackform">
    ENTER YOUR FULLNAME: <input type="text" value="enter your first name">    <input type="text" value="enter your last name"><br><br>
    COMPANY NAME: <input type="text" size="50"><br><br>
@@ -68,6 +71,7 @@
 <input type="number" name="cell no" id="phone"><br><br>
 CHOOSE PROJECT: 
 <select name="projects" id="project">
+    <option value="">choose Project</option>
     <option value="">Project 1</option>
     <option value="">Project 2</option>
     <option value="">Project 3</option>
